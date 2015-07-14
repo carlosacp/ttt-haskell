@@ -1,1 +1,7 @@
 language: haskell
+install:
+  - cabal install
+  - cabal install happy
+  - cabal install --flags=documentation
+  - cabal install --enable-benchmarks
+  - cabal install --enable-tests
